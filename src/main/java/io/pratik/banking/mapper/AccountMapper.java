@@ -19,12 +19,7 @@ public final class AccountMapper {
         throw new UnsupportedOperationException("Utility class cannot be instantiated");
     }
 
-    /**
-     * Maps an AccountDto to an Account entity.
-     *
-     * @param accountDto the DTO to map from (must not be null).
-     * @return the corresponding Account entity, or an empty Optional if accountDto is null.
-     */
+    
     public static Optional<Account> mapToAccount(AccountDto accountDto) {
         if (accountDto == null) {
             LOGGER.warning("AccountDto is null, returning empty Optional");
