@@ -36,12 +36,7 @@ public final class AccountMapper {
         return Optional.of(account);
     }
 
-    /**
-     * Maps an Account entity to an AccountDto.
-     *
-     * @param account the entity to map from (must not be null).
-     * @return the corresponding AccountDto, or an empty Optional if account is null.
-     */
+   
     public static Optional<AccountDto> mapToAccountDto(Account account) {
         if (account == null) {
             LOGGER.warning("Account is null, returning empty Optional");
