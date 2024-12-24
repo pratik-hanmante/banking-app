@@ -40,7 +40,7 @@ public class AccountServiceImpl implements AccountService {
             Account savedAccount = accountRepository.save(account);
             log.info("Account successfully created with ID: {}", savedAccount.getId());
             
-            // Map entity back to DTO and return
+            
             return AccountMapper.mapToAccountDto(savedAccount);
         } catch (Exception e) {
             log.error("Error occurred while creating account: {}", e.getMessage(), e);
