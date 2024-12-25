@@ -43,7 +43,7 @@ public class AccountServiceImpl implements AccountService {
             
             return AccountMapper.mapToAccountDto(savedAccount);
         } catch (Exception e) {
-            log.error("Error occurred while creating account: {}", e.getMessage(), e);
+            log.error("following error occurred : {}", e.getMessage(), e);
             throw new RuntimeException("Error creating account", e);
         }
     }
