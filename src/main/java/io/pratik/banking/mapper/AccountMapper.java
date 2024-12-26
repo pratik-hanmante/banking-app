@@ -14,7 +14,7 @@ public final class AccountMapper {
 
     private static final Logger LOGGER = Logger.getLogger(AccountMapper.class.getName());
 
-    // Private constructor to prevent instantiation
+    
     private AccountMapper() {
         throw new UnsupportedOperationException("Utility class cannot be instantiated");
     }
