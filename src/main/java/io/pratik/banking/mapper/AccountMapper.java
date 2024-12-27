@@ -7,9 +7,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.logging.Logger;
 
-/**
- * A utility class for mapping between Account and AccountDto.
- */
+
 public final class AccountMapper {
 
     private static final Logger LOGGER = Logger.getLogger(AccountMapper.class.getName());
